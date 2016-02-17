@@ -7,7 +7,7 @@ http://gimmeproxy.com/
 ``` php
 require_once "class.gimmeproxy.php";
 $gp = new GimmeProxy();
-$gp->setReturnType(GIMME_PROXY_OBJECT);
+$gp->setReturnType(GIMME_PROXY_ASSOC_ARRAY);
 $gpResponse = $gp->gimmeProxy();
 echo "ip and port: " . $gpResponse['ip'] . "\n"; // ip and port: 89.244.144.31:8080
 ```
